@@ -5,80 +5,93 @@
   text-align: center;
 }
 
-/* EmployeeDirectory.css */
-.employee-directory-container {
-  display: flex;
+/* General Styling */
+body {
   font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  border: 2px solid #333;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  height: 500px;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-/* HomePage panel */
-.home-page {
-  flex: 1;
-  border-right: 1px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f8f8;
+/* HomePage Container */
+.homepage {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-/* Header styles */
+/* Header */
 .header {
-  background-color: #f0f0f0;
-  padding: 12px;
+  background-color:white;
+  color: white;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 16px;
 }
 
-/* Search bar styles */
+/* Search Bar */
 .search-bar {
-  padding: 8px;
+  display: flex;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
-  background-color: #fff;
 }
 
 .search-bar input {
-  width: 100%;
+  flex: 1;
   padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
 }
 
-/* Employee list container */
+/* Employee List */
 .employee-list {
-  overflow-y: auto;
-  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Employee list item */
+/* Employee List Item */
 .employee-list-item {
   display: flex;
   align-items: center;
-  padding: 10px 12px;
-  border-bottom: 1px solid #eee;
-  transition: background-color 0.2s;
-  background-color: white;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-/* Employee info */
-.employee-info {
-  display:flex
-  border-box
+.employee-list-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Employee Avatar */
+.employee-list-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #007bff;
+}
+
+/* Employee Details */
+.employee-details {
+  flex-grow: 1;
 }
 
 .employee-name {
+  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 2px;
+  color: #333;
 }
 
 .employee-title {
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
 }
 
